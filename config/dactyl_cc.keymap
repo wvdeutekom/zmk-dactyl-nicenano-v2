@@ -53,23 +53,6 @@
      release-after-ms = <2000>;
  };
 
-/ {
-    macros {
-        uppercase_G: uppercase_G {
-            label = "uppercase_G";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp G>
-                , <&macro_release &kp LSHFT>
-                ;
-      };
-    };
-
-    //combos {
-    //    compatible = "zmk,combos";        
-    //};
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -79,17 +62,7 @@
         };
     };
 
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-           bindings = <&kp>, <&kp>;
-        };
-    };
+    
 
     keymap {
         compatible = "zmk,keymap";
