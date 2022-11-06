@@ -153,10 +153,10 @@
 
         default_layer {
             bindings = <
-    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5 &kp F6 &kp F7  &kp F8  &kp F9  &kp F10     
-    &hm LCTRL R     &hm LSHIFT S    &hm LGUI N     &hm LALT D     &kp B                              &hm PLUS EQUAL     &hm LALT A     &hm LGUI E     &hm LSHIFT I     &hm LCTRL H
-    &kp X     &kp F    &kp L     &kp C     &kp W                                                    &hm MINUS UNDERSCORE     &kp U     &kp O     &kp Y    &hm COMMA PERIOD 
-              &hm  LT LEFT_BRACE &hm  GT RIGHT_BRACE                                                                 &hm LEFT_BRACKET LEFT_PARENTHESIS &hm RIGHT_BRACKET RIGHT_PARENTHESIS 
+    &kp F1      &kp F2  &kp F3  &kp F4  &kp F5 &kp F6       &kp F7  &kp F8  &kp F9  &kp F10     
+    &kp MINUS   &kp 1   &kp 2   &kp 3   &kp 4   &kp 5       &kp 6  &kp 7   &kp 8   &kp 9
+    &kp LBKT    &kp Q   &kp W   &kp E   &kp R   &kp T       &kp Y  &kp U   &kp I   &kp O
+    &hm  LT LEFT_BRACE &hm  GT RIGHT_BRACE   &hm LEFT_BRACKET LEFT_PARENTHESIS &hm RIGHT_BRACKET RIGHT_PARENTHESIS 
                       &sl NAV_L   &kp T       &none                  &kp DEL   &kp SPACE    &sl SYM_L 
                       &kp TAB &kp LEFT_ARROW  &kp DOWN_ARROW        &kp UP_ARROW   &kp RIGHT_ARROW   &kp BACKSPACE
             >;
