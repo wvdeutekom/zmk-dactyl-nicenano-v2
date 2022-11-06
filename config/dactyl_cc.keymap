@@ -153,8 +153,8 @@
 
         default_layer {
             bindings = <
-    &hm QUESTION EXCLAMATION     &kp G    &kp M     &kp P     &kp V                                &hm SQT DQT                          &kp J     &kp K     &hm SEMICOLON COLON     &hm BACKSLASH SLASH     
-    &hm LCTRL R     &hm LSHIFT S    &hm LGUI N     &hm LALT D     &kp B                              &hm PLUS EQUAL     &hm LALT A     &hm LGUI E     &hm LSHIFT I     &hm LCTRL H
+    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp 6                          &kp J     &kp K     &hm SEMICOLON COLON     &hm BACKSLASH SLASH     
+    &kp 1     &hm LSHIFT S    &hm LGUI N     &hm LALT D     &kp B                              &hm PLUS EQUAL     &hm LALT A     &hm LGUI E     &hm LSHIFT I     &hm LCTRL H
     &kp X     &kp F    &kp L     &kp C     &kp W                                                    &hm MINUS UNDERSCORE     &kp U     &kp O     &kp Y    &hm COMMA PERIOD 
               &hm  LT LEFT_BRACE &hm  GT RIGHT_BRACE                                                                 &hm LEFT_BRACKET LEFT_PARENTHESIS &hm RIGHT_BRACKET RIGHT_PARENTHESIS 
                       &sl NAV_L   &kp T       &none                  &kp DEL   &kp SPACE    &sl SYM_L 
