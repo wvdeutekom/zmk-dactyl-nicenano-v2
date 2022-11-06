@@ -131,9 +131,9 @@
 
 sym_layer {
             bindings = <
-     &none     &none       &none     &none      &none     &none             &none      &none     &none     &none 
-    &none   &none     &none &none   &none                             &none     &none     &none     &none     &none
-    &none      &none          &none     &none     &none       &none     &none     &&none     &none     &none 
+     &kp GRAVE     &kp TILDE2       &kp PIPE     &kp CARET      &kp HASH     &kp STAR             &kp AMPS      &kp PERCENT     &kp DOLLAR     &kp AT_SIGN 
+    &kp NUMBER_1   &kp NUMBER_2     &kp NUMBER_3 &kp NUMBER_4   &none                             &none     &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0
+    &none      &kp Y          &kp D                    &kp NUMBER_5     &none                              &none     &kp NUMBER_6     &kp J     &kp K     &kp L 
                       &none &none                                                                       &none    &none
                       &none   &none   &none                  &trans   &trans   &none
                       &trans   &trans   &trans                  &trans   &trans   &trans
@@ -143,11 +143,11 @@ sym_layer {
 
         nav_layer {
             bindings = <
-                &none        &none        &none       &none          &none         &none     &none     &none     &none          &none
-                &none     &none     &none     &none         &none           &none   &none       &none   &none       &none
-                &none     &none     &none       &none      &none            &none       &none        &none    &none     &none
+                &kp WINDOW_1        &kp WINDOW_2        &kp WINDOW_3       &kp WINDOW_4          &kp WINDOW_5                                     &kp WINDOW_6     &kp WINDOW_7     &kp WINDOW_8     &kp WINDOW_9          &none
+                &kp DESKTOP_SPEC     &kp DESKTOP_PREV     &kp DESKTOP_LT      &kp DESKTOP_RT         &kp ROT_LAYOUT                                &kp KILL_WINDOW   &kp ROTATE_WINDOW_LT       &kp ROTATE_WINDOW_RT   &kp MOVE_TO_MASTER       &none
+                &kp TAB_LT     &kp TAB_RT     &kp WINDOW_LT       &kp WINDOW_RT      &kp TOGGLE_FLOATING                                          &kp MAXIMIZE       &kp MINIMIZE        &kp UN_MINIMIZE    &kp SHRINK_WIDTH     &kp EXPAND_WIDTH
                       &none &none                                                                       &none    &none
-                                                  &none     &none     &none         &none     &none        &none
+                                                  &sl NAV_L     &none     &none         &none     &none        &sl SYM_L
                       &none   &none   &none                 &none   &none   &none 
 
 
@@ -156,7 +156,7 @@ sym_layer {
 
         nav2_layer {
             bindings = <
-                &none        &none        &none       &none          &none       &none     &none     &none             &none
+                &kp SEND_W_TO_1        &kp SEND_W_TO_2        &kp SEND_W_TO_3       &kp SEND_W_TO_4          &kp SEND_W_TO_5       &kp SEND_W_TO_6     &kp SEND_W_TO_7     &kp SEND_W_TO_8     &kp SEND_W_TO_9          &none
                 &none   &none   &none   &none      &none                   &kp F1  &kp F2 &kp F3  &kp F4  &kp F5 
                 &none   &none   &none   &none                 &none                       &kp F6 &kp F7 &kp F8  &kp F9  &kp F10 
                                                         &none     &none       &kp F11  &kp F12
