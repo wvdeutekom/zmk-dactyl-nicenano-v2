@@ -153,20 +153,19 @@
 
         default_layer {
             bindings = <
-    &kp F1    &kp F2    &kp F3     &kp F4    &kp F5    &kp F6                             &kp F7    &kp F8    &kp F9    &kp F10   &kp F11  &kp F12          
-    &kp MINUS &kp N1    &kp N2     &kp N3    &kp N4    &kp N5                             &kp N6    &kp N7    &kp N8    &kp N9    &kp N0   &kp EQUAL
-    &kp LBKT  &kp Q     &kp W      &kp E     &kp R     &kp T                              &kp Y     &kp U     &kp I     &kp O     &kp P    &kp RBKT
-    &mo LOWER &kp A     &kp S      &kp D     &kp F     &kp G                              &kp H     &kp J     &kp K     &kp L     &kp SEMI &kp SQT
-    &kp LSHFT &kp Z     &kp X      &kp C     &kp V     &kp B                              &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RSHFT
-                        &kp N1     &kp N2    &kp N3    &kp N4                             &kp N4    &kp N3    &kp N2    &kp N1
-                        &kp N5     &kp N6    &kp N7    &kp N8                             &kp N8    &kp N7    &kp N6    &kp N5
+    &hm QUESTION EXCLAMATION     &kp G    &kp M     &kp P     &kp V                                &hm SQT DQT                          &kp J     &kp K     &hm SEMICOLON COLON     &hm BACKSLASH SLASH     
+    &hm LCTRL R     &hm LSHIFT S    &hm LGUI N     &hm LALT D     &kp B                              &hm PLUS EQUAL     &hm LALT A     &hm LGUI E     &hm LSHIFT I     &hm LCTRL H
+    &kp X     &kp F    &kp L     &kp C     &kp W                                                    &hm MINUS UNDERSCORE     &kp U     &kp O     &kp Y    &hm COMMA PERIOD 
+              &hm  LT LEFT_BRACE &hm  GT RIGHT_BRACE                                                                 &hm LEFT_BRACKET LEFT_PARENTHESIS &hm RIGHT_BRACKET RIGHT_PARENTHESIS 
+                      &sl NAV_L   &kp T       &none                  &kp DEL   &kp SPACE    &sl SYM_L 
+                      &kp TAB &kp LEFT_ARROW  &kp DOWN_ARROW        &kp UP_ARROW   &kp RIGHT_ARROW   &kp BACKSPACE
             >;
         };
 
 sym_layer {
             bindings = <
-               &kp GRAVE     &kp TILDE2       &kp PIPE     &kp CARET      &kp HASH     &kp STAR             &kp AMPS      &kp PERCENT     &kp DOLLAR     &kp AT_SIGN 
-    &kp NUMBER_1     &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4     &none                              &none     &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0
+     &kp GRAVE     &kp TILDE2       &kp PIPE     &kp CARET      &kp HASH     &kp STAR             &kp AMPS      &kp PERCENT     &kp DOLLAR     &kp AT_SIGN 
+    &kp NUMBER_1   &kp NUMBER_2     &kp NUMBER_3 &kp NUMBER_4   &none                             &none     &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0
     &none      &kp Y          &kp D                    &kp NUMBER_5     &none                              &none     &kp NUMBER_6     &kp J     &kp K     &kp L 
                       &none &none                                                                       &none    &none
                       &none   &none   &none                  &trans   &trans   &none
