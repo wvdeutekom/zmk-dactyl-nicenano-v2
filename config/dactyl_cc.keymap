@@ -89,44 +89,9 @@
       };
     };
 
-    combos {
-        compatible = "zmk,combos";
-        combo_q {
-            timeout-ms = <50>;
-            key-positions = <5 6>;
-            bindings = <&kp Q>;
-        };
-        combo_z {
-            timeout-ms = <50>;
-            key-positions = <5 7>;
-            bindings = <&kp Z>;
-        };
-        combo_aa {
-            timeout-ms = <50>;
-            key-positions = <6 9>;
-            bindings = <&kp SE_AA>;
-        };
-        combo_ae {
-            timeout-ms = <50>;
-            key-positions = <7 9>;
-            bindings = <&kp SE_AE>;
-        };
-        combo_oe {
-            timeout-ms = <50>;
-            key-positions = <8 9>;
-            bindings = <&kp SE_OE>;
-        };
-        combo_return {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&kp RETURN>;
-        };
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp ESCAPE>;
-        };
-    };
+    //combos {
+    //    compatible = "zmk,combos";        
+    //};
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
