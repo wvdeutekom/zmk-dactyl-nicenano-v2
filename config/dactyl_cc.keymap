@@ -83,9 +83,9 @@
     &kp LBKT    &none   &none   &none   &none  &none          &kp PG_UP  &kp HOME  &kp UP            &kp END            &kp P    &kp C_VOL_DN
     &kp LBKT    &none   &none   &none   &none  &none          &kp PG_DN  &kp LEFT  &kp DOWN          &kp RIGHT          &kp L    &kp C_MUTE 
     &bt BT_CLR  &none   &none   &none   &none  &none          &kp N      &kp M     &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp M    &kp M
-                              &kp SINGLE_QUOTE &kp LS(N2)  
-                                                              &mo SYM_L  &kp SPACE &kp DEL   &kp LALT  &kp K_APP  &kp LG(TAB)  
-    &kp TAB  &kp ESC  &kp LCTRL &kp BSPC  &kp RET &mo NAV_L   &kp LPAR  &kp RPAR 
+                              &kp N1     &kp N2          &kp N3     &kp N4 
+                          &kp DEL    &kp LALT    &kp F3     &kp F4          &kp TAB    &kp TAB 
+                          &kp LCTRL  &kp BSPC    &kp RET    &kp F10         &kp F11    &kp F12
 
 
             >;
@@ -98,9 +98,9 @@
     &kp LBKT    &kp Q   &kp W   &kp E   &kp R  &kp T        &kp Y   &kp U   &kp I   &kp O   &kp P   &kp P
     &kp LBKT    &kp A   &kp S   &kp D   &kp F  &kp G        &kp H   &kp J   &kp K   &kp L   &kp L   &kp L
     &kp LBKT    &kp Z   &kp X   &kp C   &kp V  &kp B        &kp N   &kp M   &kp M   &kp M   &kp M   &kp M
-                                        &kp SINGLE_QUOTE &kp LS(N2)  
-                                                              &mo SYM_L  &kp SPACE &kp DEL   &kp LALT  &kp K_APP  &kp LG(TAB)  
-    &kp TAB  &kp ESC  &kp LCTRL &kp BSPC  &kp RET &mo NAV_L   &kp LPAR  &kp RPAR 
+                                        &kp N1     &kp N2          &kp N3     &kp N4 
+                          &kp DEL    &kp LALT    &kp F3     &kp F4          &kp TAB    &kp TAB 
+                          &kp LCTRL  &kp BSPC    &kp RET    &kp F10         &kp F11    &kp F12
                 
             >;
         };
