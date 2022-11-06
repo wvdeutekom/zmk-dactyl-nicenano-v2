@@ -42,20 +42,7 @@
 #define SEND_W_TO_8   LG(LS(NUMBER_8))
 #define SEND_W_TO_9   LG(LS(NUMBER_9))
 
-#define ROT_LAYOUT          LG(SPACE)
-#define TOGGLE_FLOATING     LG(LC(SPACE))
-#define MOVE_TO_MASTER      LG(LC(RET))
-#define ROTATE_WINDOW_LT    LG(LS(J))
-#define ROTATE_WINDOW_RT    LG(LS(K))
-
 #define UN_MINIMIZE     LG(LC(N))
-
-#define SHRINK_WIDTH    LG(LA(H))
-#define EXPAND_WIDTH    LG(LA(L))
-#define INC_COL         LG(LC(H))
-#define DEC_COL         LG(LC(L))
-#define INC_MASTER      LG(LS(H))
-#define DEC_MASTER      LG(LS(L))
 
 &mt {
     tapping-term-ms = <500>;
