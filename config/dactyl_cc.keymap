@@ -3,11 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-// #############      SWEDISH COMPATIBLE SPECIAL CHARACTERS        #################
-#define SE_AA LEFT_BRACKET
-#define SE_AE SQT
-#define SE_OE SEMICOLON
-
 // #############      LAYERS        #################
 #define SYM_L 1
 #define NAV_L 2
@@ -26,10 +21,6 @@
 #define KILL_WINDOW  LA(F4)
 #define MAXIMIZE  LG(UP)
 #define MINIMIZE  LG(DOWN)
-
-// Linux specific navigation 
-#define DESKTOP_PREV   LG(ESC)
-#define DESKTOP_SPEC   LG(O)
 
 #define WINDOW_1   LG(NUMBER_1)
 #define WINDOW_2   LG(NUMBER_2)
