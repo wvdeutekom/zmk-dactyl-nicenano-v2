@@ -22,26 +22,6 @@
 #define MAXIMIZE  LG(UP)
 #define MINIMIZE  LG(DOWN)
 
-#define WINDOW_1   LG(NUMBER_1)
-#define WINDOW_2   LG(NUMBER_2)
-#define WINDOW_3   LG(NUMBER_3)
-#define WINDOW_4   LG(NUMBER_4)
-#define WINDOW_5   LG(NUMBER_5)
-#define WINDOW_6   LG(NUMBER_6)
-#define WINDOW_7   LG(NUMBER_7)
-#define WINDOW_8   LG(NUMBER_8)
-#define WINDOW_9   LG(NUMBER_9)
-
-#define SEND_W_TO_1   LG(LS(NUMBER_1))
-#define SEND_W_TO_2   LG(LS(NUMBER_2))
-#define SEND_W_TO_3   LG(LS(NUMBER_3))
-#define SEND_W_TO_4   LG(LS(NUMBER_4))
-#define SEND_W_TO_5   LG(LS(NUMBER_5))
-#define SEND_W_TO_6   LG(LS(NUMBER_6))
-#define SEND_W_TO_7   LG(LS(NUMBER_7))
-#define SEND_W_TO_8   LG(LS(NUMBER_8))
-#define SEND_W_TO_9   LG(LS(NUMBER_9))
-
 #define UN_MINIMIZE     LG(LC(N))
 
 &mt {
@@ -64,17 +44,7 @@
         };
     };
     
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-           bindings = <&kp>, <&kp>;
-        };
-    };
+
 
     keymap {
         compatible = "zmk,keymap";
