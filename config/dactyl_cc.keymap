@@ -76,18 +76,19 @@
  };
 
 / {
-    macros {
-        uppercase_G: uppercase_G {
-            label = "uppercase_G";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp G>
-                , <&macro_release &kp LSHFT>
-                ;
-      };
-    };
+   // macros {
+   //     uppercase_G: uppercase_G {
+   //         label = "uppercase_G";
+   //         compatible = "zmk,behavior-macro";
+   //         #binding-cells = <0>;
+   //         bindings
+   //             = <&macro_press &kp LSHFT>
+   //             , <&macro_tap &kp G>
+   //             , <&macro_release &kp LSHFT>
+   //             ;
+   //   };
+   //
+   };
 
     //combos {
     //    compatible = "zmk,combos";        
