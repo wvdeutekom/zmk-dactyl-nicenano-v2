@@ -64,12 +64,12 @@
 
         sym_layer {
             bindings = <
-    &kp GRAVE  &none      &none      &none       &none      &none         &none      &none     &none     &none      &none              &none
-    &kp MINUS  &kp N1     &kp N2     &kp N3      &kp N4     &kp N5        &kp N6     &kp N7    &kp N8    &kp N9     &kp N0             &kp EQUAL
-    &kp LT     &none      &kp LC(W)  &kp LC(J)   &kp LC(Y)  &kp LS(LC(T)) &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp P              &kp P
-    &kp CAPS   &kp LC(A)  &kp LC(S)  &kp LC(D)   &kp LC(F)  &kp LC(N)     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp L              &kp L
-    &kp CAPS   &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)  &kp ESC       &kp N      &kp M     &kp LG(LC(LEFT))     &kp LG(LC(RIGHT))  &kp M   &kp M
-                                        &kp N1    &kp N2     &kp N3  &kp N4 
+    &kp GRAVE  &none      &none      &none       &none      &none           &none      &none     &none             &none              &none    &kp &kp C_MUTE
+    &kp MINUS  &kp N1     &kp N2     &kp N3      &kp N4     &kp N5          &kp N6     &kp N7    &kp N8            &kp N9             &kp N0   &kp C_VOL_UP
+    &kp LT     &none      &kp LC(W)  &kp LC(J)   &kp LC(Y)  &kp LS(LC(T))   &kp PG_UP  &kp HOME  &kp UP            &kp END            &kp P    &kp C_VOL_DN
+    &kp CAPS   &kp LC(A)  &kp LC(S)  &kp LC(D)   &kp LC(F)  &kp LC(N)       &kp PG_DN  &kp LEFT  &kp DOWN          &kp RIGHT          &kp L    &kp C_MUTE 
+    &kp CAPS   &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)  &kp ESC         &kp N      &kp M     &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp M    &kp M
+                                            &kp N1    &kp N2     &kp N3  &kp N4 
                              &kp DEL    &kp LALT  &kp F3     &kp F4  &kp TAB &kp TAB 
                              &kp LCTRL  &kp BSPC  &kp RET    &kp F10 &kp F11 &kp F12
             >;
