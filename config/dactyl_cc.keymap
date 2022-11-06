@@ -9,6 +9,15 @@
 #define NAV2_L 3
 //#define OTHER_L 4
 
+#define DEFAULT 0
+#define LOWER   1
+#define RAISE   2
+#define ADJUST  3
+//#define MAC     
+
+#define HYPER(key) LS(LC(LA(LG(key))))
+#define MEH(key)   LS(LC(LA(key)))
+
 // Desktop and tab navigation shortcuts
 #define DESKTOP_LT   LC(LG(LEFT))
 #define DESKTOP_RT   LC(LG(RIGHT))
@@ -64,14 +73,14 @@
 
         sym_layer {
             bindings = <
-    &kp GRAVE  &none      &none      &none       &none      &none           &none      &none     &none             &none              &none    &kp C_MUTE
-    &kp MINUS  &kp N1     &kp N2     &kp N3      &kp N4     &kp N5          &kp N6     &kp N7    &kp N8            &kp N9             &kp N0   &kp C_VOL_UP
-    &kp LT     &none      &kp LC(W)  &kp LC(J)   &kp LC(Y)  &kp LS(LC(T))   &kp PG_UP  &kp HOME  &kp UP            &kp END            &kp P    &kp C_VOL_DN
-    &kp CAPS   &kp LC(A)  &kp LC(S)  &kp LC(D)   &kp LC(F)  &kp LC(N)       &kp PG_DN  &kp LEFT  &kp DOWN          &kp RIGHT          &kp L    &kp C_MUTE 
-    &kp CAPS   &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)  &kp ESC         &kp N      &kp M     &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp M    &kp M
+    &kp GRAVE  &none      &none      &none       &none      &none           &none      &none     &none             &none              &none       &kp C_MUTE
+    &kp MINUS  &kp N1     &kp N2     &kp N3      &kp N4     &kp N5          &kp N6     &kp N7    &kp N8            &kp N9             &kp N0      &kp C_VOL_UP
+    &kp LT     &none      &kp LC(W)  &kp LC(J)   &kp LC(Y)  &kp LS(LC(T))   &kp PG_UP  &kp HOME  &kp UP            &kp END            &kp P       &kp C_VOL_DN
+    &kp CAPS   &kp LC(A)  &kp LC(S)  &kp LC(D)   &kp LC(F)  &kp LC(N)       &kp PG_DN  &kp LEFT  &kp DOWN          &kp RIGHT          &kp L       &kp C_MUTE 
+    &kp CAPS   &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)  &kp ESC         &kp N      &kp M     &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp LS(N3)  &kp LS(N4)
                                      &kp LS(NON_US_BSLH)    &kp AMPS        &kp N3     &kp N4 
-                          &kp DEL    &kp LALT    &kp F3     &kp F4          &kp TAB    &kp TAB 
-                          &kp LCTRL  &kp BSPC    &kp RET    &kp F10         &kp F11    &kp F12
+                          &kp EQUAL  &kp LALT    &kp CARET  &kp F4          &kp TAB    &kp TAB 
+                          &kp LCTRL  &kp BSPC    &kp ASTRK  &kp EXCL        &kp PLUS   &kp MINUS
             >;
         };
 
@@ -85,7 +94,7 @@
     &bt BT_CLR  &none   &none   &none   &none  &none        &none      &none     &none      &none      &none   &none
                                         &kp N1 &kp N2       &kp N3  &kp N4 
                                 &kp F1 &kp F2  &kp F3       &kp F4  &kp F5  &kp F6 
-                                &kp F7 &kp F8  &kp F9       &kp F10 &kp F11 &kp F12
+                                &kp F7 &kp F8  &kp F9       &kp F10 &kp F11 &kp NON_US_HASH
 
 
             >;
