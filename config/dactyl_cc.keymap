@@ -4,9 +4,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // #############      SWEDISH COMPATIBLE SPECIAL CHARACTERS        #################
-// #define SE_AA LEFT_BRACKET
-// #define SE_AE SQT
-// #define SE_OE SEMICOLON
+ #define SE_AA LEFT_BRACKET
+ #define SE_AE SQT
+ #define SE_OE SEMICOLON
 
 // #############      LAYERS        #################
 #define SYM_L 1
