@@ -61,17 +61,17 @@
     &kp NON_US_BSLH   &kp A     &kp S    &kp D    &kp F    &kp G             &kp H      &kp J     &kp K       &kp L      &kp SEMI    &kp FSLH
     &kp LSHFT         &kp Z     &kp X    &kp C    &kp V    &kp B             &kp N      &kp M     &kp COMMA   &kp DOT    &kp FSLH    &kp RSHFT
                                          &kp SINGLE_QUOTE  &kp LS(N2)  
-                                                &mo SYM_L  &kp SPACE   
+                                                &mo LOWER  &kp SPACE   
                                                                              &kp DEL    &kp LALT  
                                                                              &kp K_APP  &kp LG(TAB)  
                                                 &kp TAB    &kp ESC  
                                                 &kp LCTRL  &kp BSPC  
-                                                                             &kp RET    &mo NAV_L           
+                                                                             &kp RET    &mo RAISE           
                                                                              &kp LPAR   &kp RPAR 
             >;
         };
 
-        sym_layer {
+        LOWER {
             bindings = <
 &kp GRAVE   &none       &none       &none        &none       &none           &none        &none     &none             &none              &none     &kp C_MUTE
 &kp MINUS   &kp N1      &kp N2      &kp N3       &kp N4      &kp N5          &kp N6       &kp N7    &kp N8            &kp N9             &kp N0    &kp C_VOL_UP
@@ -90,7 +90,7 @@
         };
 
 
-        nav_layer {
+        RAISE {
             bindings = <
 &kp F11       &none        &none      &none     &none     &none           &none     &none     &none      &none     &none     &kp C_MUTE
 &none         &kp N1       &kp N2     &kp N3    &kp N4    &kp N5          &kp N6    &kp N7    &kp N8     &kp N9    &kp N0    &kp C_VOL_UP
