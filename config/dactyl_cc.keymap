@@ -9,6 +9,10 @@
 #define NAV2_L 3
 //#define OTHER_L 4
 
+#define DEFAULT 0
+#define LOWER   1
+#define RAISE   2
+
 // Desktop and tab navigation shortcuts
 #define DESKTOP_LT   LC(LG(LEFT))
 #define DESKTOP_RT   LC(LG(RIGHT))
