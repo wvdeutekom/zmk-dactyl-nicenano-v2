@@ -113,10 +113,10 @@
 
         ALTERNATE {
             bindings = <
-  &bt BT_CLR   &kp F2    &kp F3    &kp F4    &kp F5   &kp F6          &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-  &bt BT_NXT   &kp N1    &kp N2    &kp N3    &kp N4   &kp N5          &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp N0
-  &bt BT_PRV   &kp Q     &kp W     &kp E     &kp R    &kp T           &kp Y     &kp U     &kp I     &kp O     &kp P     &kp P
-  &bt BT_SEL 1 &kp A     &kp S     &kp D     &kp F    &kp G           &kp H     &kp J     &kp K     &kp L     &kp L     &kp L
+  &kp F1       &kp F2    &kp F3    &kp F4    &kp F5   &kp F6          &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
+  &kp F1       &kp N1    &kp N2    &kp N3    &kp N4   &kp N5          &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp N0
+  &kp F1       &kp Q     &kp W     &kp E     &kp R    &kp T           &kp Y     &kp U     &kp I     &kp O     &kp P     &kp P
+  &kp F1       &kp A     &kp S     &kp D     &kp F    &kp G           &kp H     &kp J     &kp K     &kp L     &kp L     &kp L
   &kp LBKT     &kp Z     &kp X     &kp C     &kp V    &kp B           &kp N     &kp M     &kp M     &kp M     &kp M     &kp M
                                              &kp N1   &kp N2          
                                              &kp N3   &kp N4 
