@@ -49,7 +49,7 @@
         };
     };
     
- {
+
     behaviors {
         td_mt: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
@@ -69,7 +69,7 @@
             >;
         };
     };
-};  
+ 
     
 
 
