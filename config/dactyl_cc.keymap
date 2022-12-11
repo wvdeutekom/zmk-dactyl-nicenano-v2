@@ -53,10 +53,18 @@
     behaviors {
         td_mt: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAP";
+            label = "TAP_DANCE_LSHIFT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mt LSHIFT CAPSLOCK>, <&kp LCTRL>;
+        };
+        
+        td_mt: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_RSHIFT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt RSHIFT CAPSLOCK>, <&kp RCTRL>;
         };
     };
 
