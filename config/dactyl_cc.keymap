@@ -90,7 +90,7 @@
     &kp NON_US_BSLH   &kp A     &kp S    &kp D    &kp F    &kp G             &kp H      &kp J     &kp K       &kp L      &kp SEMI    &kp FSLH
     &td_mt_ls         &kp Z     &kp X    &kp C    &kp V    &kp B             &kp N      &kp M     &kp COMMA   &kp DOT    &kp FSLH    &td_mt_rs
                                          &kp SINGLE_QUOTE  &kp LS(N2)  
-                                               &mo LOWER   &kp SPACE   
+                                               &td_lw_win  &kp SPACE   
                                                                              &kp DEL    &kp LALT  
                                                                              &kp K_APP  &kp LG(TAB)  
                                                 &kp TAB    &kp ESC  
