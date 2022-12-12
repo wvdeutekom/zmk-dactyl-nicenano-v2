@@ -64,7 +64,7 @@
             label = "TAP_DANCE_RSHIFT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt RSHIFT CAPSLOCK>, <&kp LWIN>;
+            bindings = <&mt RSHIFT CAPSLOCK>, <&kp RCTRL>;
         };
         
         td_lw_win: tap_dance_mod_tap {
@@ -72,20 +72,10 @@
             label = "TAP_DANCE_LOW_WIN";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo LOWER>, <&kp RCTRL>;
+            bindings = <&mo LOWER>, <&kp LWIN>;
         };
     };
 
-  //  keymap {
-  //      compatible = "zmk,keymap";
-
-  //      default_layer {
-  //          bindings = <
-  //              &td_mt
-  //          >;
-  //      };
-  //  };
- 
     
 
 
@@ -100,7 +90,7 @@
     &kp NON_US_BSLH   &kp A     &kp S    &kp D    &kp F    &kp G             &kp H      &kp J     &kp K       &kp L      &kp SEMI    &kp FSLH
     &td_mt_ls         &kp Z     &kp X    &kp C    &kp V    &kp B             &kp N      &kp M     &kp COMMA   &kp DOT    &kp FSLH    &td_mt_rs
                                          &kp SINGLE_QUOTE  &kp LS(N2)  
-                                            &mo td_lw_win  &kp SPACE   
+                                               &mo LOWER   &kp SPACE   
                                                                              &kp DEL    &kp LALT  
                                                                              &kp K_APP  &kp LG(TAB)  
                                                 &kp TAB    &kp ESC  
