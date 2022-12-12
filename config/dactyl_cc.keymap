@@ -72,7 +72,7 @@
             label = "TAP_DANCE_ESC_WIN";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt LC(LG(LEFT)) ESC>, <&kp LC(LG(RIGHT))>;
+            bindings = <&kp TAB ESC>, <&kp TILDE2>;
         };    
         
     };
@@ -122,11 +122,11 @@
 
         RAISE {
             bindings = <
-&kp F11       &none        &none     &none     &none     &none           &none       &none     &none           &none            &none     &kp C_MUTE
-&none         &kp N1       &kp N2    &kp N3    &kp N4    &kp N5          &kp N6      &kp N7    &kp N8          &kp N9           &kp N0    &kp C_VOL_UP
-&none         &none        &none     &none     &none     &none           &kp PG_UP   &kp HOME  &kp UP          &kp END          &none     &kp C_VOL_DN
-&sl SYMBOL    &none        &none     &none     &none     &none           &kp PG_DN   &kp LEFT  &kp DOWN        &kp RIGHT        &none     &kp C_MUTE
-&kp GRAVE     &kp TILDE2   &none     &none     &none     &none           &none       &none     &kp LEFT_BRACE  &kp RIGHT_BRACE  &none     &none
+&kp F11       &none        &none     &none     &none     &none           &none       &none     &none       &none       &none     &kp C_MUTE
+&none         &kp N1       &kp N2    &kp N3    &kp N4    &kp N5          &kp N6      &kp N7    &kp N8      &kp N9      &kp N0    &kp C_VOL_UP
+&none         &none        &none     &none     &none     &none           &kp PG_UP   &kp HOME  &kp UP      &kp END     &none     &kp C_VOL_DN
+&sl SYMBOL    &none        &none     &none     &none     &none           &kp PG_DN   &kp LEFT  &kp DOWN    &kp RIGHT   &none     &kp C_MUTE
+&kp GRAVE     &kp TILDE2   &none     &none     &none     &none           &none       &none     &kp LBRC    &kp RBRC    &none     &none
                                       &kp NON_US_HASH    &kp TILDE2       
                                                 &kp N3   &kp N4 
                                                                          &kp F1    &kp F2  
