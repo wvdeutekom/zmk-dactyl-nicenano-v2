@@ -94,7 +94,7 @@
                                                 &mo LOWER  &kp SPACE   
                                                                              &kp DEL    &kp LALT  
                                                                              &kp K_APP  &kp LG(TAB)  
-                                                &kp TAB    &kp ESC
+                                                &kp TAB    &td_mt_ew
                                                 &kp LCTRL  &kp BSPC  
                                                                              &kp RET    &mo RAISE           
                                                                              &kp LPAR   &kp RPAR 
@@ -127,13 +127,13 @@
 &none         &none        &none     &none     &none     &none           &kp PG_UP   &kp HOME  &kp UP          &kp END          &none     &kp C_VOL_DN
 &sl SYMBOL    &none        &none     &none     &none     &none           &kp PG_DN   &kp LEFT  &kp DOWN        &kp RIGHT        &none     &kp C_MUTE
 &kp GRAVE     &kp TILDE2   &none     &none     &none     &none           &none       &none     &kp LEFT_BRACE  &kp RIGHT_BRACE  &none     &none
-                                      &kp NON_US_HASH     &kp TILDE2       
-                                                &kp N3    &kp N4 
-                                                                          &kp F1    &kp F2  
-                                                &kp F5    &kp F6 
-                                                &kp F7    &kp F8  
-                                                                          &kp F9    &kp F10 
-                                                                          &kp F11   &kp F12
+                                      &kp NON_US_HASH    &kp TILDE2       
+                                                &kp N3   &kp N4 
+                                                                         &kp F1    &kp F2  
+                                                &kp F5   &kp F6 
+                                                &kp F7   &kp F8  
+                                                                         &kp F9    &kp F10 
+                                                                         &kp F11   &kp F12
 
 
             >;
