@@ -69,7 +69,7 @@
         
         td_lw_win: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_RSHIFT";
+            label = "TAP_DANCE_LOW_WIN";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo LOWER>, <&kp RCTRL>;
