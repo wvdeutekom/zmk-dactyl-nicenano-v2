@@ -65,15 +65,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mt RSHIFT CAPSLOCK>, <&kp RCTRL>;
-        };
-        
-      \\  td_mt_esc_win: tap_dance_mod_tap {
-       \\     compatible = "zmk,behavior-tap-dance";
-        \\    label = "TAP_DANCE_ESC_WIN";
-        \\    #binding-cells = <0>;
-        \\    tapping-term-ms = <200>;
-        \\    bindings = <&mt ESC ESC>, <&kp LGUI>;
-      \\  };
+        };       
         
     };
 
@@ -126,7 +118,7 @@
 &none         &kp N1       &kp N2     &kp N3    &kp N4    &kp N5          &kp N6      &kp N7    &kp N8     &kp N9             &kp N0    &kp C_VOL_UP
 &none         &none        &none      &none     &none     &none           &kp PG_UP   &kp HOME  &kp UP     &kp END            &none     &kp C_VOL_DN
 &sl SYMBOL    &none        &none      &none     &none     &none           &kp PG_DN   &kp LEFT  &kp DOWN   &kp RIGHT          &none     &kp C_MUTE
-&kp GRAVE     &kp TILDE2   &none      &none     &none     &none           &none       &none     &kp LBRC   &kp RBRC           &none     &none
+&kp GRAVE     &kp TILDE2   &none      &none     &none     &none           &none       &none     &none      &none              &none     &none
                                       &kp NON_US_HASH     &kp TILDE2       
                                                 &kp N3    &kp N4 
                                                                           &kp F1    &kp F2  
