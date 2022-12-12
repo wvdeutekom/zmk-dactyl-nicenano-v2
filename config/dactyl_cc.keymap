@@ -72,7 +72,7 @@
             label = "TAP_DANCE_ESC_WIN";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt TAB ESC>, <&kp RCTRL>;
+            bindings = <&mt LC(TAB) ESC>, <&kp LC(LS(TAB))>;
         };    
         
     };
@@ -133,7 +133,7 @@
                                                 &kp F5   &kp F6 
                                                 &kp F7   &kp F8  
                                                                          &kp F9    &kp F10 
-                                                                         &kp LEFT_BRACE  &kp RIGHT_BRACE
+                                                                         &kp LBRC  &kp RBRC
 
 
             >;
