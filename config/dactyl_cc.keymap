@@ -67,13 +67,13 @@
             bindings = <&mt RSHIFT CAPSLOCK>, <&kp RCTRL>;
         };       
         
-        td_mt_ew: tap_dance_mod_tap {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_ESC_WIN";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mt LG(DOWN) ESC>, <&kp TAB>;
-        }; 
+     //   td_mt_ew: tap_dance_mod_tap {
+     //       compatible = "zmk,behavior-tap-dance";
+     //       label = "TAP_DANCE_ESC_WIN";
+     //       #binding-cells = <0>;
+     //       tapping-term-ms = <200>;
+     //       bindings = <&mt LG(DOWN) ESC>, <&kp TAB>;
+     //   }; 
         
     };
 
@@ -94,7 +94,7 @@
                                                 &mo LOWER  &kp SPACE   
                                                                              &kp DEL    &kp LALT  
                                                                              &kp K_APP  &kp LG(TAB)  
-                                                  &kp TAB  &td_mt_ew
+                                                  &kp TAB  &kp ESC
                                                 &kp LCTRL  &kp BSPC  
                                                                              &kp RET    &mo RAISE           
                                                                              &kp LPAR   &kp RPAR 
