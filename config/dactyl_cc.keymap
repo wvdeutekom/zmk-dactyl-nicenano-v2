@@ -64,7 +64,15 @@
             label = "TAP_DANCE_RSHIFT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt RSHIFT CAPSLOCK>, <&kp RCTRL>;
+            bindings = <&mt RSHIFT CAPSLOCK>, <&kp LWIN>;
+        };
+        
+        td_lw_win: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_RSHIFT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo LOWER>, <&kp RCTRL>;
         };
     };
 
@@ -92,7 +100,7 @@
     &kp NON_US_BSLH   &kp A     &kp S    &kp D    &kp F    &kp G             &kp H      &kp J     &kp K       &kp L      &kp SEMI    &kp FSLH
     &td_mt_ls         &kp Z     &kp X    &kp C    &kp V    &kp B             &kp N      &kp M     &kp COMMA   &kp DOT    &kp FSLH    &td_mt_rs
                                          &kp SINGLE_QUOTE  &kp LS(N2)  
-                                                &mo LOWER  &kp SPACE   
+                                            &mo td_lw_win  &kp SPACE   
                                                                              &kp DEL    &kp LALT  
                                                                              &kp K_APP  &kp LG(TAB)  
                                                 &kp TAB    &kp ESC  
