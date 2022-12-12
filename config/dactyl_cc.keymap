@@ -73,7 +73,15 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp TAB ESC>, <&kp TILDE2>;
-        };    
+        }; 
+        
+        td_mt_tab_cf: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_TAB_CF";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp TAB>, <&kp LS(LC(F))>;
+        };   
         
     };
 
@@ -94,7 +102,7 @@
                                                 &mo LOWER  &kp SPACE   
                                                                              &kp DEL    &kp LALT  
                                                                              &kp K_APP  &kp LG(TAB)  
-                                                &kp TAB    &td_mt_ew
+                                         &kp td_mt_tab_cf  &td_mt_ew
                                                 &kp LCTRL  &kp BSPC  
                                                                              &kp RET    &mo RAISE           
                                                                              &kp LPAR   &kp RPAR 
