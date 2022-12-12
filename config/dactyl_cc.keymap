@@ -112,7 +112,7 @@
                                                  &kp N3      &bt BT_CLR 
                                                                              &kp PRCNT     &kp ASTRK    
                                                                              &kp CARET     &kp FSLH          
-                                                 &kp TAB     &td_mt_ew 
+                                                 &kp TAB     &kp ESC 
                                                  &kp LCTRL   &kp BSPC    
                                                                              &kp EQUAL     &kp EXCL                               
                                                                              &kp PLUS      &kp MINUS    
