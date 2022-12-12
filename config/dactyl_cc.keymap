@@ -67,13 +67,13 @@
             bindings = <&mt RSHIFT CAPSLOCK>, <&kp RCTRL>;
         };
         
-        //td_lw_win: tap_dance_mod_tap {
-        //    compatible = "zmk,behavior-tap-dance";
-        //    label = "TAP_DANCE_LOW_WIN";
-        //    #binding-cells = <0>;
-        //    tapping-term-ms = <200>;
-        //    bindings = <&mo LOWER>, <&kp LWIN>;
-        //};
+        td_lw_win: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_LOW_WIN";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo LOWER>, <&mo LOWER>;
+        };
     };
 
     
