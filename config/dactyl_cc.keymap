@@ -81,7 +81,7 @@
 
 
     keymap {
-        compatible = "zmk,keymap";
+        compatible = "zmk,keymap"; 
 
         default_layer {
             bindings = <
@@ -133,7 +133,7 @@
                                                 &kp F5   &kp F6 
                                                 &kp F7   &kp F8  
                                                                          &kp F9    &kp F10 
-                                                                         &kp F11   &kp F12
+                                                                         &kp LEFT_BRACE  &kp RIGHT_BRACE
 
 
             >;
