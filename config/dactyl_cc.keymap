@@ -67,6 +67,14 @@
             bindings = <&mt RSHIFT CAPSLOCK>, <&kp RCTRL>;
         };       
         
+        td_mt_ew: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_ESC_WIN";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt RSHIFT ESC>, <&kp RCTRL>;
+        };    
+        
     };
 
     
