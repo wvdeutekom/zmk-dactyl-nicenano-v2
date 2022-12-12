@@ -72,7 +72,7 @@
             label = "TAP_DANCE_LOW_WIN";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo LOWER>, <&mo LOWER>;
+            bindings = <&mt LOWER LOWER>, <&mt LWIN>;
         };
     };
 
