@@ -64,17 +64,9 @@
             label = "TAP_DANCE_RSHIFT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt RSHIFT CAPSLOCK>, <&kp RCTRL>;
+            bindings = <&mt RSHIFT ESC>, <&kp RCTRL>;
         };       
-        
-     td_mt_escprnscr: tap_dance_mod_tap {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_ESCPRNSCR";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mt PRINTSCREEN ESC>, <&kp TAB>;
-        }; 
-        
+               
     };
 
     
@@ -94,7 +86,7 @@
                                                 &mo LOWER  &kp SPACE   
                                                                              &kp DEL    &kp LALT  
                                                                              &kp K_APP  &kp LG(TAB)  
-                                                  &kp TAB  &td_mt_escprnscr
+                                                  &kp TAB  &kp ESC
                                                 &kp LCTRL  &kp BSPC  
                                                                              &kp RET    &mo RAISE           
                                                                              &kp LPAR   &kp RPAR 
