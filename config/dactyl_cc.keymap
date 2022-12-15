@@ -73,21 +73,21 @@
     };
 
     behaviors {    
-        td_mt_ls: tap_dance_mod_tap {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_LSHIFT";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mt LSHIFT CAPSLOCK>, <&kp LCTRL>;
-        };
+     //   td_mt_ls: tap_dance_mod_tap {
+     //       compatible = "zmk,behavior-tap-dance";
+     //       label = "TAP_DANCE_LSHIFT";
+     //       #binding-cells = <0>;
+     //       tapping-term-ms = <200>;
+     //       bindings = <&mt LSHIFT CAPSLOCK>, <&kp LCTRL>;
+     //   };
         
-        td_mt_rs: tap_dance_mod_tap {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_RSHIFT";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mt RSHIFT ESC>, <&kp RCTRL>;
-        };
+     //   td_mt_rs: tap_dance_mod_tap {
+     //      compatible = "zmk,behavior-tap-dance";
+     //       label = "TAP_DANCE_RSHIFT";
+     //      #binding-cells = <0>;
+     //       tapping-term-ms = <200>;
+     //       bindings = <&mt RSHIFT ESC>, <&kp RCTRL>;
+     //   };
         
         // newly added
         am: alpha_mods {
@@ -106,6 +106,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        
+        td: tapdance {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPDANCE";
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -144,7 +154,7 @@
                                                 &mo LOWER  &kp SPACE   
                                                                              &kp DEL    &kp LALT  
                                                                              &kp K_APP  &kp LG(TAB)  
-                                                  &kp TAB  &kp ESC
+                                               &td TAB COMMA  &td ESC DOT
                                                 &kp LCTRL  &kp BSPC  
                                                                              &kp RET    &mo RAISE           
                                                                              &kp LPAR   &kp RPAR 
