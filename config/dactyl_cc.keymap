@@ -84,9 +84,17 @@
         td_mt_rs: tap_dance_mod_tap {
            compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_RSHIFT";
-           #binding-cells = <0>;
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mt RSHIFT ESC>, <&kp RCTRL>;
+        };
+        
+        td_mt: tap_dance_mod_tap {
+           compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_RSHIFT";
+           #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt &kp>, <&kp>;
         };
         
         // newly added
@@ -137,6 +145,17 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        
+        gqt: global-quick-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GLOBAL_QUICK_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
 
@@ -154,7 +173,7 @@
                                                 &mo LOWER  &kp SPACE   
                                                                              &kp DEL    &kp LALT  
                                                                              &kp K_APP  &kp LG(TAB)  
-                                            &td COMMA TAB  &td DOT ESC  
+                                              &td TAB TAB  &td_mt DOT ESC  
                                                 &kp LCTRL  &kp BSPC  
                                                                              &kp RET    &mo RAISE           
                                                                              &kp LPAR   &kp RPAR 
