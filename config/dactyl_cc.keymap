@@ -29,9 +29,21 @@
 
 #define UN_MINIMIZE     LG(LC(N))
 
+// these ae newly added
 &mt {
-    tapping-term-ms = <500>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <150>;
 };
+
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <150>;
+};
+
+// old version commented out
+//&mt {
+//    tapping-term-ms = <500>;
+//};
 
 
  &sl {
@@ -49,8 +61,18 @@
         };
     };
     
+    macros {
+        ZMK_MACRO(inv_qm,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N8>
+                , <&macro_release &kp LALT>;
+        )
+    };
 
-    behaviors {
+    behaviors {    
         td_mt_ls: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_LSHIFT";
@@ -65,11 +87,47 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mt RSHIFT ESC>, <&kp RCTRL>;
-        };       
-               
-    };
+        };
+        
+        // newly added
+        am: alpha_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ALPHA_MT";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        // newly added
+        as: alpha_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ALPHA_SFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
 
-    
+        // Easy alt-tab with alt+backspace thumb using mod-morphs
+        bstab: backspace_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSPC_TAB";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp TAB>;
+            mods = <MOD_LALT>;
+        };
+        // newly added
+        lt_bspc: layer_tap_backspace_tab {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_BT";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            bindings = <&mo>, <&bstab>;
+        };               
+    };
 
 
     keymap {
