@@ -135,7 +135,7 @@
         //    flavor = "balanced";
         //    bindings = <&mo>, <&bstab>;
         //};
-        
+         
         td: tapdance {
             compatible = "zmk,behavior-hold-tap";
             label = "TAPDANCE";
