@@ -73,60 +73,60 @@
     };
 
     behaviors {    
-     //   td_mt_ls: tap_dance_mod_tap {
-     //       compatible = "zmk,behavior-tap-dance";
-     //       label = "TAP_DANCE_LSHIFT";
-     //       #binding-cells = <0>;
-     //       tapping-term-ms = <200>;
-     //       bindings = <&mt LSHIFT CAPSLOCK>, <&kp LCTRL>;
-     //   };
-        
-     //   td_mt_rs: tap_dance_mod_tap {
-     //      compatible = "zmk,behavior-tap-dance";
-     //       label = "TAP_DANCE_RSHIFT";
-     //      #binding-cells = <0>;
-     //       tapping-term-ms = <200>;
-     //       bindings = <&mt RSHIFT ESC>, <&kp RCTRL>;
-     //   };
-        
-        // newly added
-        am: alpha_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ALPHA_MT";
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <150>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-        // newly added
-        as: alpha_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ALPHA_SFT";
-            #binding-cells = <2>;
+        td_mt_ls: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_LSHIFT";
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+            bindings = <&mt LSHIFT CAPSLOCK>, <&kp LCTRL>;
         };
+        
+        td_mt_rs: tap_dance_mod_tap {
+           compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_RSHIFT";
+           #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt RSHIFT ESC>, <&kp RCTRL>;
+        };
+        
+        // newly added
+        //am: alpha_mods {
+        //    compatible = "zmk,behavior-hold-tap";
+        //    label = "ALPHA_MT";
+        //    #binding-cells = <2>;
+        //    tapping-term-ms = <250>;
+        //    quick-tap-ms = <150>;
+        //    flavor = "tap-preferred";
+        //    bindings = <&kp>, <&kp>;
+        //};
+        // newly added
+        //as: alpha_shift {
+        //    compatible = "zmk,behavior-hold-tap";
+        //    label = "ALPHA_SFT";
+        //    #binding-cells = <2>;
+        //    tapping-term-ms = <200>;
+        //    quick-tap-ms = <150>;
+        //    flavor = "tap-preferred";
+        //    bindings = <&kp>, <&kp>;
+        //};
         
         // Easy alt-tab with alt+backspace thumb using mod-morphs
-        bstab: backspace_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BSPC_TAB";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp TAB>;
-            mods = <MOD_LALT>;
-        };
+        //bstab: backspace_tab {
+        //    compatible = "zmk,behavior-mod-morph";
+        //    label = "BSPC_TAB";
+        //    #binding-cells = <0>;
+        //    bindings = <&kp BSPC>, <&kp TAB>;
+        //    mods = <MOD_LALT>;
+        //};
         // newly added
-        lt_bspc: layer_tap_backspace_tab {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_BT";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "balanced";
-            bindings = <&mo>, <&bstab>;
-        };               
+        //lt_bspc: layer_tap_backspace_tab {
+        //    compatible = "zmk,behavior-hold-tap";
+        //    label = "LT_BT";
+        //    #binding-cells = <2>;
+        //    tapping-term-ms = <150>;
+        //    flavor = "balanced";
+        //    bindings = <&mo>, <&bstab>;
+        //};               
     };
 
 
