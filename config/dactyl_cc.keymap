@@ -173,7 +173,7 @@
                                                 &mo LOWER  &kp SPACE   
                                                                              &kp DEL    &kp LALT  
                                                                              &kp K_APP  &kp LG(TAB)  
-                                              &td TAB TAB  &td_mt DOT ESC  
+                                              &td TAB TAB  &td DOT ESC  
                                                 &kp LCTRL  &kp BSPC  
                                                                              &kp RET    &mo RAISE           
                                                                              &kp LPAR   &kp RPAR 
