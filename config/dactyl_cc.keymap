@@ -136,15 +136,15 @@
         //    bindings = <&mo>, <&bstab>;
         //};
          
-        td: tapdance {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAPDANCE";
-            #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
+     //   td: tapdance {
+       //     compatible = "zmk,behavior-hold-tap";
+      //      label = "TAPDANCE";
+       //     #binding-cells = <2>;
+      //      tapping-term-ms = <190>;
+      //      quick_tap_ms = <0>;
+      //      flavor = "tap-preferred";
+      //      bindings = <&kp>, <&kp>;
+      //  };
         
         gqt: global-quick-tap {
             compatible = "zmk,behavior-hold-tap";
@@ -173,7 +173,7 @@
                                                 &mo LOWER  &kp SPACE   
                                                                              &kp DEL    &kp LALT  
                                                                              &kp K_APP  &kp LG(TAB)  
-                                              &td TAB TAB  &td ESC ESC   
+                                                  &kp TAB  &kp ESC   
                                                 &kp LCTRL  &kp BSPC  
                                                                              &kp RET    &mo RAISE           
                                                                              &kp LPAR   &kp RPAR 
