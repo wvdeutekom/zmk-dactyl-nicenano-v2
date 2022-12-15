@@ -32,7 +32,7 @@
 // these ae newly added
 &mt {
     flavor = "hold-preferred";
-    tapping-term-ms = <150>;
+    tapping-term-ms = <500>;
 };
 
 &lt {
