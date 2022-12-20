@@ -119,22 +119,22 @@
         };
         
         // Easy alt-tab with alt+backspace thumb using mod-morphs
-        //bstab: backspace_tab {
-        //    compatible = "zmk,behavior-mod-morph";
-        //    label = "BSPC_TAB";
-        //    #binding-cells = <0>;
-        //    bindings = <&kp BSPC>, <&kp TAB>;
-        //    mods = <MOD_LALT>;
-        //};
+        bstab: backspace_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSPC_TAB";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp TAB>;
+            mods = <MOD_LALT>;
+        };
         // newly added
-        //lt_bspc: layer_tap_backspace_tab {
-        //    compatible = "zmk,behavior-hold-tap";
-        //    label = "LT_BT";
-        //    #binding-cells = <2>;
-        //    tapping-term-ms = <150>;
-        //    flavor = "balanced";
-        //    bindings = <&mo>, <&bstab>;
-        //};
+        lt_bspc: layer_tap_backspace_tab {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_BT";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            bindings = <&mo>, <&bstab>;
+        };
          
         td: tapdance {
             compatible = "zmk,behavior-hold-tap";
