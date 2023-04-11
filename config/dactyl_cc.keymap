@@ -5,15 +5,22 @@
 
 
 // #############      SWEDISH COMPATIBLE SPECIAL CHARACTERS        #################
-#define SE_AA LEFT_BRACKET
-#define SE_AE SQT
-#define SE_OE SEMICOLON
+// #define SE_AA LEFT_BRACKET
+// #define SE_AE SQT
+// #define SE_OE SEMICOLON
 
 // #############      LAYERS        #################
 #define SYM_L 1
 #define NAV_L 2
 #define NAV2_L 3
 //#define OTHER_L 4
+
+#define DEFAULT 0
+#define LOWER   1
+#define RAISE   2
+#define SYMBOL  3
+
+
 
 // Desktop and tab navigation shortcuts
 #define DESKTOP_LT   LC(LG(LEFT))
@@ -27,6 +34,7 @@
 #define KILL_WINDOW  LA(F4)
 #define MAXIMIZE  LG(UP)
 #define MINIMIZE  LG(DOWN)
+#define UN_MINIMIZE  LG(LC(N))
 
 // Linux specific navigation 
 #define DESKTOP_PREV   LG(ESC)
@@ -58,8 +66,6 @@
 #define ROTATE_WINDOW_LT    LG(LS(J))
 #define ROTATE_WINDOW_RT    LG(LS(K))
 
-#define UN_MINIMIZE     LG(LC(N))
-
 #define SHRINK_WIDTH    LG(LA(H))
 #define EXPAND_WIDTH    LG(LA(L))
 #define INC_COL         LG(LC(H))
@@ -71,10 +77,17 @@
     tapping-term-ms = <500>;
 };
 
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <150>;
+};
+
 
  &sl {
      release-after-ms = <2000>;
  };
+
+
 
 / {
     macros {
@@ -150,58 +163,85 @@
     };
 
     keymap {
-        compatible = "zmk,keymap";
+        compatible = "zmk,keymap"; 
 
         default_layer {
             bindings = <
-    &hm QUESTION EXCLAMATION     &kp G    &kp M     &kp P     &kp V                                &hm SQT DQT                          &kp J     &kp K     &hm SEMICOLON COLON     &hm BACKSLASH SLASH     
-    &hm LCTRL R     &hm LSHIFT S    &hm LGUI N     &hm LALT D     &kp B                              &hm PLUS EQUAL     &hm LALT A     &hm LGUI E     &hm LSHIFT I     &hm LCTRL H
-    &kp X     &kp F    &kp L     &kp C     &kp W                                                    &hm MINUS UNDERSCORE     &kp U     &kp O     &kp Y    &hm COMMA PERIOD 
-              &hm  LT LEFT_BRACE &hm  GT RIGHT_BRACE                                                                 &hm LEFT_BRACKET LEFT_PARENTHESIS &hm RIGHT_BRACKET RIGHT_PARENTHESIS 
-                      &sl NAV_L   &kp T       &none                  &kp DEL   &kp SPACE    &sl SYM_L 
-                      &kp TAB &kp LEFT_ARROW  &kp DOWN_ARROW        &kp UP_ARROW   &kp RIGHT_ARROW   &kp BACKSPACE
+    &kp F1            &kp F2    &kp F3   &kp F4   &kp F5   &kp F6            &kp F7     &kp F8    &kp F9      &kp F10    &kp F11     &kp F12
+    &kp MINUS         &kp N1    &kp N2   &kp N3   &kp N4   &kp N5            &kp N6     &kp N7    &kp N8      &kp N9     &kp N0      &kp EQUAL
+    &kp LBKT          &kp Q     &kp W    &kp E    &kp R    &kp T             &kp Y      &kp U     &kp I       &kp O      &kp P       &kp RBKT
+    &kp NON_US_BSLH   &kp A     &kp S    &kp D    &kp F    &kp G             &kp H      &kp J     &kp K       &kp L      &kp SEMI    &kp FSLH
+    &kp LSHIFT        &kp Z     &kp X    &kp C    &kp V    &kp B             &kp N      &kp M     &kp COMMA   &kp DOT    &kp FSLH    &kp RSHIFT
+                                         &kp SINGLE_QUOTE  &kp LS(N2)   
+                                                &mo LOWER  &kp SPACE   
+                                                                             &kp DEL    &kp LALT  
+                                                                             &kp K_APP  &kp LG(TAB)  
+                                                  &kp TAB  &kp ESC   
+                                                &kp LCTRL  &kp BSPC  
+                                                                             &kp RET    &mo RAISE           
+                                                                             &kp LPAR   &kp RPAR 
             >;
         };
 
-sym_layer {
+        LOWER {
             bindings = <
-               &kp GRAVE     &kp TILDE2       &kp PIPE     &kp CARET      &kp HASH     &kp STAR             &kp AMPS      &kp PERCENT     &kp DOLLAR     &kp AT_SIGN 
-    &kp NUMBER_1     &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4     &none                              &none     &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0
-    &none      &kp Y          &kp D                    &kp NUMBER_5     &none                              &none     &kp NUMBER_6     &kp J     &kp K     &kp L 
-                      &none &none                                                                       &none    &none
-                      &none   &none   &none                  &trans   &trans   &none
-                      &trans   &trans   &trans                  &trans   &trans   &trans
+&kp GRAVE   &none       &none       &none        &none       &none           &none        &none     &none             &none              &none     &kp C_MUTE
+&kp MINUS   &kp N1      &kp N2      &kp N3       &kp N4      &kp N5          &kp N6       &kp N7    &kp N8            &kp N9             &kp N0    &kp C_VOL_UP
+&kp LT      &none       &kp LC(W)   &kp LC(J)    &kp LC(Y)   &kp LS(LC(T))   &kp PG_UP    &kp HOME  &kp UP            &kp END            &kp P     &kp C_VOL_DN
+&kp CAPS    &kp LC(A)   &kp LC(S)   &kp LC(D)    &kp LC(F)   &kp LC(N)       &kp PG_DN    &kp LEFT  &kp DOWN          &kp RIGHT          &kp L     &kp C_MUTE 
+&kp CAPS    &kp LC(Z)   &kp LC(X)   &kp LC(C)    &kp LC(V)   &kp ESC         &kp N        &kp M     &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp M     &kp M
+                                    &kp LS(NON_US_BSLH)      &kp AMPS          
+                                                 &kp N3      &bt BT_CLR 
+                                                                             &kp PRCNT     &kp ASTRK    
+                                                                             &kp CARET     &kp FSLH          
+                                                 &kp TAB     &kp ESC 
+                                                 &kp LCTRL   &kp BSPC    
+                                                                             &kp EQUAL     &kp EXCL                               
+                                                                             &kp PLUS      &kp MINUS    
             >;
         };
 
 
-        nav_layer {
+        RAISE {
             bindings = <
-                &kp WINDOW_1        &kp WINDOW_2        &kp WINDOW_3       &kp WINDOW_4          &kp WINDOW_5                                     &kp WINDOW_6     &kp WINDOW_7     &kp WINDOW_8     &kp WINDOW_9          &none
-                &kp DESKTOP_SPEC     &kp DESKTOP_PREV     &kp DESKTOP_LT      &kp DESKTOP_RT         &kp ROT_LAYOUT                                &kp KILL_WINDOW   &kp ROTATE_WINDOW_LT       &kp ROTATE_WINDOW_RT   &kp MOVE_TO_MASTER       &none
-                &kp TAB_LT     &kp TAB_RT     &kp WINDOW_LT       &kp WINDOW_RT      &kp TOGGLE_FLOATING                                          &kp MAXIMIZE       &kp MINIMIZE        &kp UN_MINIMIZE    &kp SHRINK_WIDTH     &kp EXPAND_WIDTH
-                      &none &none                                                                       &none    &none
-                                                  &sl NAV_L     &none     &none         &none     &none        &sl SYM_L
-                      &none   &none   &none                 &none   &none   &none 
+&kp F11       &none        &none     &none     &none     &none           &none       &none     &none       &none       &none     &kp C_MUTE
+&none         &kp N1       &kp N2    &kp N3    &kp N4    &kp N5          &kp N6      &kp N7    &kp N8      &kp N9      &kp N0    &kp C_VOL_UP
+&none         &none        &none     &none     &none     &none           &kp PG_UP   &kp HOME  &kp UP      &kp END     &none     &kp C_VOL_DN
+&sl SYMBOL    &none        &none     &none     &none     &none           &kp PG_DN   &kp LEFT  &kp DOWN    &kp RIGHT   &none     &kp C_MUTE
+&kp GRAVE     &kp TILDE2   &none     &none     &none     &none           &none       &none     &kp LBRC    &kp RBRC    &none     &none
+                                       &kp NON_US_HASH   &kp TILDE2       
+                                                &kp N3   &kp N4 
+                                                                         &kp F1    &kp F2  
+                                                                         &kp F3    &kp F4
+                                                &kp F5   &kp F6 
+                                                &kp F7   &kp F8  
+                                                                         &kp F9    &kp F10 
+                                                                         &kp LBRC  &kp RBRC
 
 
             >;
         };
 
-        nav2_layer {
+        SYMBOL {
             bindings = <
-                &kp SEND_W_TO_1        &kp SEND_W_TO_2        &kp SEND_W_TO_3       &kp SEND_W_TO_4          &kp SEND_W_TO_5       &kp SEND_W_TO_6     &kp SEND_W_TO_7     &kp SEND_W_TO_8     &kp SEND_W_TO_9          &none
-                &none   &none   &none   &none      &none                   &kp F1  &kp F2 &kp F3  &kp F4  &kp F5 
-                &none   &none   &none   &none                 &none                       &kp F6 &kp F7 &kp F8  &kp F9  &kp F10 
-                                                        &none     &none       &kp F11  &kp F12
-                                                &none   &none   &none                 &none   &none   &none 
-                                                &none   &none   &none                 &none   &none   &none 
+  &kp F10      &kp F2    &kp F3    &kp F4    &kp F5   &kp F6          &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
+  &bt BT_CLR   &kp N1    &kp N2    &kp N3    &kp N4   &kp N5          &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp N0
+  &bt BT_NXT   &kp Q     &kp W     &kp E     &kp R    &kp T           &kp Y     &kp U     &kp I     &kp O     &kp P     &kp P
+  &bt BT_PRV   &kp A     &kp S     &kp D     &kp F    &kp G           &kp H     &kp J     &kp K     &kp L     &kp L     &kp L
+  &kp LBKT     &kp Z     &kp X     &kp C     &kp V    &kp B           &kp N     &kp M     &kp M     &kp M     &kp M     &kp M
+                                             &kp N1   &kp N2          
+                                             &kp N3   &kp N4 
+                                                                      &kp F1    &kp F2   
+                                                                      &kp F3    &kp F4  
+                                             &kp F5  &kp F6 
+                                             &kp F7  &kp F8   
+                                                                      &kp F9    &kp F10 
+                                                                      &kp F11   &kp F12
                 
             >;
         };
     };
 };
-
 
    
    
