@@ -29,9 +29,14 @@
 #define UN_MINIMIZE     LG(LC(N))
 
 &mt {
+    flavor = "hold-preferred";
     tapping-term-ms = <500>;
 };
 
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <150>;
+};
 
  &sl {
      release-after-ms = <2000>;
