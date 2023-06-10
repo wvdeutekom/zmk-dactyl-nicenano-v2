@@ -1,7 +1,11 @@
-#include <behaviors.dtsi>								
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+
+// ################################################################
+// #############        WORKING 2023/06/10        #################
+// ################################################################
 
 // #############        LAYERS        #################
 #define SYM_L   1
@@ -143,11 +147,11 @@
 
 	SYMBOL {
             bindings = <
-&kp F1         &kp F2      &kp F3     &kp F4     &kp F5     &kp F6                   &kp F7        &kp F8       &kp F9       &kp F10       &kp F11      &kp F12
-&bt BT_CLR     &kp N1      &kp N2     &kp N3     &kp N4     &kp N5                   &kp N6        &kp N7       &kp N8       &kp N9        &kp N0       &kp N0
-&bt BT_NXT     &kp Q       &kp W      &kp E      &kp R      &kp T                    &kp Y         &kp U        &kp I        &kp O         &kp P        &kp P
-&bt BT_PRV     &kp N1      &kp N2     &kp N3     &kp N4     &kp N5                   &kp N6        &kp N7       &kp N8       &kp N9        &kp N0       &kp L
-&kp LBKT       &kp Z       &kp X      &kp C      &kp V      &kp B                    &kp N         &kp M        &kp M        &kp M         &kp M        &kp M
+&none          &none       &none      &none      &none      &none                    &none         &none        &none        &none         &none        &none
+&bt BT_CLR     &none       &none      &none      &none      &none                    &none         &none        &none        &none         &none        &none
+&bt BT_NXT     &none       &none      &none      &none      &none                    &none         &none        &none        &none         &none        &none 
+&bt BT_PRV     &kp N1      &kp N2     &kp N3     &kp N4     &kp N5                   &kp N6        &kp N7       &kp N8       &kp N9        &kp N0       &none 
+&kp LBKT       &none       &none      &none      &none      &none                    &none         &none        &none        &none         &none        &none 
                                                  &kp N1     &kp N2
                                                  &kp N3     &kp N4
                                                                                      &kp N1        &kp N2
