@@ -121,7 +121,7 @@
                                                                                      &kp LS(N3)   &kp CARET
                                                                                      &kp DOLLAR   &kp PRCNT
                                                      &kp TAB     &kp ESC
-                                                     &kp LCTRL   &kp BSPC
+                                                     &kp LCTRL   &kp DEL
                                                                                      &kp EXCL     &kp EQUAL
                                                                                      &kp LBRC     &kp RBRC
             >;
@@ -157,7 +157,7 @@
                                                                                      &kp N1        &kp N2
                                                                                      &kp N3        &kp N4
                                                  &kp N5     &kp N6
-                                                 &kp N7     &kp N8
+                                                 &kp N7     &kp DEL
                                                                                      &kp N9        &kp N0
                                                                                      &kp F11       &kp F12
             >;
