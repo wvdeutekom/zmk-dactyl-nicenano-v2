@@ -51,14 +51,14 @@
 
         raise_layer {
             bindings = <
-              &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans           &trans            &trans      &trans  &trans
-              &trans  &kp F20 &kp F21 &kp F22 &trans  &trans  &trans         &trans  &trans  &trans           &trans            &trans      &trans  &kp K_VOL_UP
-              &trans  &kp F23 &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans           &trans            &trans      &trans  &kp K_VOL_DN
-              &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT  &trans  &kp K_MUTE
-              &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans           &trans            &trans      &trans  &trans
-                                              &mo ADJ &trans                         &trans  &trans
-                                              &trans  &trans                         &trans  &trans
-                                              &trans  &trans                         &trans  &trans
+                &trans   &trans    &trans     &trans      &trans  &trans  &trans         &trans  &trans  &trans           &trans            &trans      &trans  &trans
+                &trans   &kp F20   &kp F21    &kp F22     &trans  &trans  &trans         &trans  &trans  &trans           &trans            &trans      &trans  &kp K_VOL_UP
+                &trans   &kp F23   &trans     &trans      &trans  &trans  &trans         &trans  &trans  &trans           &trans            &trans      &trans  &kp K_VOL_DN
+                &trans   &trans    &trans     &trans      &trans  &trans  &trans         &trans  &trans  &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT  &trans  &kp K_MUTE
+                &trans   &trans    &trans     &trans      &trans  &trans  &trans         &trans  &trans  &trans           &trans            &trans      &trans  &trans
+                                              &mo ADJ     &trans                         &trans  &trans
+                                              &trans      &trans                         &trans  &trans
+                                              &trans      &trans                         &trans  &trans
             >;
         };
 
